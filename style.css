@@ -1,0 +1,273 @@
+/*Estilizações  Globais*/
+
+* {
+margin:0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+/*Aplicando uma fonte sem serifa em todo o documento*/
+body {
+
+font-family: sans-serif;
+}
+
+.dark{
+    background-color:#111111;
+
+}
+h2{
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+    border-left:0.25rem solid #f13239;
+
+}
+.display_flex{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/*Estilização do Header*/
+
+header .container {
+   
+    justify-content:space-between ;
+    align-items: center;
+    padding: 0.5rem 0.625rem;
+    row-gap:0.5em;  
+    column-gap: 0.9375rem ; 
+   
+}
+
+#logo {
+ margin-top: 1rem;
+ width: 6.25rem;
+ cursor:pointer;
+
+}
+
+nav{
+    display:flex;
+}
+header  ul+ul {
+   
+list-style: none;    
+margin-left: 1.5rem;
+}
+
+ ul  a  {
+   color: #ebebeb;
+   font-size:x-large;
+   transition:color 0.5s;
+   text-decoration: none; 
+   border-bottom: 0.125rem solid #ebebeb;
+}
+
+ul a:hover,
+ul a:focus 
+ {
+    cursor: pointer;
+    color: #f13239;
+    border-bottom: 0.125rem solid #f13239;
+}
+
+
+/*Estilização do hero Primeira section */
+
+.hero{
+background-image:url(../images/banner.jpg);
+background-size: cover;
+background-position: center 25%;
+height: 20rem;
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+align-items:center;
+padding: 1.5rem;
+
+}
+.hero h1{
+    text-align:center;
+    color: #f13239;
+    font-size: 36px;
+    background-color:#ebebeb;
+    border-radius: 1.25rem;
+    padding:  0.25rem;
+}
+.dots{
+   display: flex;
+   margin-top: 1.5rem;
+}
+
+.dots button  {
+    display:block; 
+    background-color: #ebebeb;
+    height: 0.625rem;
+    width: 0.625rem;
+    border-radius: 50%;  
+    cursor: pointer;
+    border:none;
+}
+
+
+.dots button + button{
+    margin-left: 1rem;
+
+}
+
+.dots .active{
+    background-color: #f13239;
+
+}
+
+/* Estilizando a seção da Galeria de imagens*/
+
+.galery {
+    max-width: 75rem;
+    margin: 4rem auto 0;
+     padding: 0 1.5rem;
+     
+}
+.galery h2{
+    color:#111111;
+  
+}
+
+.galery_row {
+gap: 1.5rem;
+
+}
+
+
+.galery_row figure {
+    
+       flex:1 1 15.625rem;
+   
+}
+.galery_row  img {
+       
+    width: 100%;
+ }
+ 
+.galery_row figcaption{
+
+    font-weight: bold;
+}
+
+/* Estilizando a History*/
+
+.history {
+    padding: 5rem 1.5rem 0.9375rem ;
+    color:#ebebeb;
+     margin: 4rem 0 0;
+     border-top: 0.25rem solid  #f13239 ;
+}
+.history .container {
+    color: #ebebeb;
+    max-width:75rem;
+    margin: 0 auto  ;   
+    align-items:center;   
+    gap:1.5rem;
+    flex-wrap: wrap;
+ }
+.history .container .col{
+
+    flex: 1 1 21.875rem;
+}
+
+
+.history p{
+
+    line-height: 1.5;
+  
+}
+
+.history p + p{
+    margin-top: 1.5rem;
+   
+    }
+
+
+.history .container .col img{
+display:block;
+width:100%;
+
+}
+.history a{
+    text-decoration:none;
+  transition: color 0.2s;
+    color: #f13239;
+   border-bottom: 0.125rem solid #f13239;
+}
+
+.history a:hover,
+.history a:focus
+{
+
+    color:#ebebeb;
+    border-bottom: 0.125rem solid #ebebeb;
+}
+.container {
+
+border-bottom: 0.125rem solid #f13239;
+
+}
+
+footer div{
+
+justify-content: center;
+align-items: center;
+padding:0 0 0.625rem 0;
+}
+
+
+
+footer p{
+ margin-top:0.5rem;
+ text-align:center;
+ color:#ebebeb;
+
+}
+ 
+footer h3{
+    padding: 0 12px  ;
+    color:#f13239;
+    margin-buttom: 10px;
+}
+.meunome{
+       margin-top:0.75rem;
+       color:#f13239;
+      text-decoration:none;
+      border-bottom: 0.125rem solid #f13239;
+     
+}
+.meunome:hover,
+.meunome:focus
+{
+color:#ebebeb;
+border-bottom: 0.125rem solid #ebebeb;
+}
+
+.whatz {
+   
+    position: relative;
+    animation: mymove infinite;
+    animation-duration: 3s;
+    flex-wrap:wrap;      
+ 
+}    
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 1.625rem;}
+  }
+.whatz img{
+    height: 2.1875rem;
+    width:2.1875rem;
+
+}
