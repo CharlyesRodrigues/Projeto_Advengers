@@ -170,10 +170,11 @@ gap: 1.5rem;
 .history .container {
     color: #ebebeb;
     max-width:75rem;
-    margin: 0 auto  ;   
+    margin: 0  auto  ;   
     align-items:center;   
     gap:1.5rem;
     flex-wrap: wrap;
+    
  }
 .history .container .col{
 
@@ -228,7 +229,7 @@ padding:0 0 0.625rem 0;
 
 
 footer p{
- margin-top:0.5rem;
+ margin-top:0.75rem;
  text-align:center;
  color:#ebebeb;
 
@@ -264,10 +265,10 @@ border-bottom: 0.125rem solid #ebebeb;
 
 @keyframes mymove {
     from {left: 0px;}
-    to {left: 1.625rem;}
+    to {left: 1rem;}
   }
 .whatz img{
     height: 2.1875rem;
     width:2.1875rem;
-
+    margin-top:0.75rem;
 }
